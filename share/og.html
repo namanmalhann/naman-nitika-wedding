@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Naman weds Nitika — link preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@500&family=Pinyon+Script&family=Tiro+Devanagari+Hindi&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+      padding: 0 90px;
+      background:
+        url("../assets/bloom.svg") 0 0 / 260px 260px,
+        radial-gradient(ellipse 60% 70% at 30% 50%, rgba(176, 84, 98, 0.45), transparent 70%),
+        #14080c;
+      color: #fbf6ee;
+    }
+
+    .ganesh {
+      flex: none;
+      width: 300px;
+      padding: 8px;
+      border-radius: 999px 999px 24px 24px;
+      background: linear-gradient(180deg, #f3dfa6, #a78445);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .ganesh img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: 999px 999px 17px 17px;
+    }
+
+    .om {
+      margin: 0;
+      font-family: "Tiro Devanagari Hindi", serif;
+      font-size: 30px;
+      color: #e8c98a;
+    }
+
+    h1 {
+      margin: 10px 0 0;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      font-size: 118px;
+      line-height: 0.92;
+    }
+
+    h1 em {
+      font-family: "Pinyon Script", cursive;
+      font-style: normal;
+      font-size: 64px;
+      color: #d7b56a;
+      margin: 0 10px;
+    }
+
+    .date {
+      margin: 26px 0 0;
+      font-family: "Outfit", sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #f3d9a4;
+    }
+
+    .sub {
+      margin: 12px 0 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 32px;
+      color: rgba(251, 246, 238, 0.85);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ganesh"><img src="../assets/ganesha-card.jpg" alt="" /></div>
+  <div>
+    <p class="om">शुभ विवाह</p>
+    <h1>Naman<br /><em>weds</em>Nitika</h1>
+    <p class="date">Thursday · 3 December 2026</p>
+    <p class="sub">Lunch 11 AM · Baraat departs 4 PM</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Naman weds Nitika — printable card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500&family=Pinyon+Script&family=Tiro+Devanagari+Hindi&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --wine: #14080c;
+      --rose: #8d3d4c;
+      --rose-deep: #6d3040;
+      --ink: #2a181c;
+      --muted: #6e564e;
+      --gold: #d7b56a;
+      --gold-deep: #a78445;
+      --line: rgba(167, 132, 69, 0.45);
+      --display: "Cormorant Garamond", Georgia, serif;
+      --script: "Pinyon Script", cursive;
+      --hindi: "Tiro Devanagari Hindi", serif;
+      --sans: "Outfit", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background:
+        url("../assets/bloom.svg") 0 0 / 300px 300px,
+        radial-gradient(ellipse 70% 50% at 50% 35%, rgba(176, 84, 98, 0.42), transparent 70%),
+        radial-gradient(circle at 50% 50%, transparent 50%, rgba(0, 0, 0, 0.55) 100%),
+        var(--wine);
+      font-family: var(--sans);
+      color: var(--ink);
+    }
+
+    .card {
+      position: relative;
+      width: 860px;
+      height: 1230px;
+      padding: 92px 70px 58px;
+      border-radius: 430px 430px 40px 40px;
+      background:
+        radial-gradient(ellipse 80% 30% at 50% 0%, rgba(215, 181, 106, 0.2), transparent 70%),
+        linear-gradient(180deg, #fffaf4, #f5e9da);
+      box-shadow: 0 0 0 2px rgba(215, 181, 106, 0.8), 0 40px 90px rgba(0, 0, 0, 0.55);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      border-radius: 414px 414px 28px 28px;
+      border: 1.5px solid rgba(167, 132, 69, 0.55);
+    }
+
+    .om {
+      margin: 0;
+      font-family: var(--hindi);
+      font-size: 30px;
+      color: var(--rose);
+    }
+
+    .ganesh {
+      width: 124px;
+      margin-top: 14px;
+      padding: 6px;
+      border-radius: 999px 999px 18px 18px;
+      background: linear-gradient(180deg, #f3dfa6, var(--gold-deep));
+      box-shadow: 0 16px 30px rgba(80, 28, 36, 0.22);
+    }
+
+    .ganesh img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: 999px 999px 13px 13px;
+    }
+
+    .kicker {
+      margin: 14px 0 0;
+      font-family: var(--hindi);
+      font-size: 32px;
+      color: var(--rose);
+    }
+
+    .hosts {
+      margin: 10px 0 0;
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 28px;
+      line-height: 1.3;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 8px 0 0;
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: 112px;
+      line-height: 0.9;
+      color: var(--rose-deep);
+      letter-spacing: -0.01em;
+    }
+
+    h1 em {
+      display: block;
+      font-family: var(--script);
+      font-style: normal;
+      font-size: 54px;
+      line-height: 1.15;
+      color: var(--gold-deep);
+    }
+
+    .date {
+      margin: 20px 0 0;
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .moments {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      width: 100%;
+      margin-top: 24px;
+    }
+
+    .moment {
+      padding: 22px 16px 20px;
+      border-radius: 26px;
+      border: 1.5px solid var(--line);
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .moment small {
+      display: block;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--rose);
+    }
+
+    .moment b {
+      display: block;
+      margin-top: 6px;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 1;
+      color: var(--rose-deep);
+    }
+
+    .moment b i {
+      font-style: normal;
+      font-size: 0.45em;
+      color: var(--gold-deep);
+      margin-left: 4px;
+    }
+
+    .moment p {
+      margin: 10px 0 0;
+      font-size: 20px;
+      line-height: 1.35;
+      color: #3d2a2e;
+    }
+
+    .foot {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      margin-top: auto;
+      padding-top: 20px;
+      text-align: left;
+    }
+
+    .qr {
+      width: 140px;
+      height: 140px;
+      padding: 12px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1.5px solid var(--line);
+    }
+
+    .qr svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .foot strong {
+      display: block;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 32px;
+      color: var(--ink);
+    }
+
+    .foot span {
+      display: block;
+      margin-top: 4px;
+      font-size: 19px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .foot em {
+      display: block;
+      margin-top: 6px;
+      font-family: var(--script);
+      font-style: normal;
+      font-size: 34px;
+      color: var(--gold-deep);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <p class="om">॥ श्री गणेशाय नमः ॥</p>
+    <div class="ganesh"><img src="../assets/ganesha-card.jpg" alt="" /></div>
+    <p class="kicker">शुभ विवाह</p>
+    <p class="hosts">Smt. Kavita &amp; Late Sh. Vijender Singh <br />invite you to the wedding of their son</p>
+    <h1>Naman<em>with</em>Nitika</h1>
+    <p class="date">Thursday · 3 December 2026</p>
+    <div class="moments">
+      <div class="moment">
+        <small>Lunch</small>
+        <b>11:00<i>AM</i></b>
+        <p>Our residence, Arya Nagar,<br />Tehsil Road, Jhajjar</p>
+      </div>
+      <div class="moment">
+        <small>Baraat departs</small>
+        <b>4:00<i>PM</i></b>
+        <p>For Naveen Garden,<br />Gohana Bypass, Sonipat</p>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="qr" id="qr"></div>
+      <div>
+        <strong>Scan for the full invitation</strong>
+        <span>Maps, timings &amp; contacts<br />Naman · 72066 11897</span>
+        <em>All Malhan's Family</em>
+      </div>
+    </div>
+  </div>
+  <script>
+    fetch("qr.svg").then((r) => r.text()).then((svg) => {
+      document.getElementById("qr").innerHTML = svg;
+      document.body.dataset.ready = "1";
+    });
+  </script>
+</body>
+
+</html>
