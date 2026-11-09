@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@300;400;600&family=Tiro+Devanagari+Hindi&display=swap");
+
+.reg-root {
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(212, 175, 55, 0.12), transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(120, 40, 60, 0.25), transparent 40%),
+    linear-gradient(180deg, #0a1628 0%, #141e38 55%, #0d1224 100%);
+  color: #f5f0e6;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+}
+
+.reg-frame {
+  position: fixed;
+  inset: 12px;
+  pointer-events: none;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 20px;
+}
+
+.reg-frame::before,
+.reg-frame::after {
+  content: "✦";
+  position: absolute;
+  color: #d4af37;
+  font-size: 1.1rem;
+}
+
+.reg-frame::before {
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reg-wrap {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 5rem;
+}
+
+.reg-crown {
+  text-align: center;
+  padding: 1.5rem 1rem 1.2rem;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.18), transparent);
+  border-top: 2px solid #d4af37;
+}
+
+.reg-crown img {
+  width: 110px;
+  border-radius: 12px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
+}
+
+.reg-crown h1 {
+  margin: 0.8rem 0 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.3rem, 10vw, 3.4rem);
+  letter-spacing: 0.02em;
+}
+
+.reg-crown h1 span {
+  display: block;
+  font-size: 0.4em;
+  font-style: italic;
+  color: #d4af37;
+  letter-spacing: 0.35em;
+  margin: 0.3rem 0;
+}
+
+.reg-sheet {
+  background: rgba(12, 20, 40, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 0 0 20px 20px;
+  padding: 1.5rem 1.15rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.reg-sheet + .reg-sheet {
+  border-radius: 20px;
+}
+
+.reg-eyebrow {
+  color: #d4af37;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.reg-hosts {
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+}
+
+.reg-names {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  color: #f8e8c8;
+}
+
+.reg-names em {
+  display: block;
+  font-style: italic;
+  font-size: 0.42em;
+  color: #d4af37;
+}
+
+.reg-clock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.reg-clock div {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 10px;
+  padding: 0.4rem;
+}
+
+.reg-clock b {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #d4af37;
+}
+
+.reg-wish {
+  margin: 1rem auto 0;
+  max-width: 22rem;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: rgba(245, 240, 230, 0.82);
+  line-height: 1.5;
+}
+
+.reg-divine img {
+  width: min(320px, 100%);
+  border: 2px solid #d4af37;
+  border-radius: 16px;
+}
+
+.reg-moments {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.reg-moment {
+  padding: 1rem;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.reg-moment-time {
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
+  color: #d4af37;
+}
+
+.reg-call a {
+  display: block;
+  margin-top: 0.45rem;
+  padding: 0.65rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  color: #f5f0e6;
+  text-decoration: none;
+  background: rgba(120, 40, 60, 0.35);
+}
+
+.reg-manuhar {
+  margin-top: 0.9rem;
+  padding: 0.8rem;
+  border: 1px dashed rgba(212, 175, 55, 0.5);
+  border-radius: 12px;
+}
+
+.reg-family {
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+}
+
+.reg-back,
+.reg-music {
+  position: fixed;
+  z-index: 5;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.reg-back {
+  left: 1rem;
+  top: 1rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.15);
+  color: #f5f0e6;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.reg-music {
+  right: 1rem;
+  bottom: 1rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #d4af37;
+  color: #0a1628;
+}
+
+.reg-om,
+.reg-shlok,
+.reg-hosts-hi,
+.reg-rsvp-hi {
+  font-family: "Tiro Devanagari Hindi", serif;
+}
+
+.reg-links a {
+  color: #d4af37;
+  margin: 0 0.3rem;
+  font-size: 0.78rem;
+}
+
+.reg-open {
+  display: block;
+  width: calc(100% - 2rem);
+  max-width: 580px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  border: 1px solid #d4af37;
+  border-radius: 14px;
+  background: rgba(212, 175, 55, 0.12);
+  color: #f5f0e6;
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
